@@ -18,7 +18,8 @@ class ApplicationController < Sinatra::Base
 
   post "/signup" do
     #your code here
-    binding.pry 
+    raise params.inspect
+    binding.pry
   end
 
   get '/account' do
