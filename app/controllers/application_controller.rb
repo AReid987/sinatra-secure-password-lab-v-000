@@ -20,7 +20,7 @@ class ApplicationController < Sinatra::Base
     #your code here
     if !!params[:username] && !!params[:password]
       redirect '/login'
-    else 
+    else
       redirect '/failure'
     binding.pry
   end
