@@ -23,7 +23,7 @@ class ApplicationController < Sinatra::Base
     else
       redirect '/failure'
     end
-    #binding.pry
+    binding.pry
   end
 
   get '/account' do
