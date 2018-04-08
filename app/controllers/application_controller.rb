@@ -18,12 +18,13 @@ class ApplicationController < Sinatra::Base
 
   post "/signup" do
     #your code here
+      binding.pry
     if !!params[:username] #&& !!params[:password]
       redirect '/login'
     else
       redirect '/failure'
     end
-    binding.pry
+  
   end
 
   get '/account' do
